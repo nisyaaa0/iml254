@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>About Me</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>About Me ⋆｡‧˚ʚ ୨ৎ ɞ˚‧｡⋆</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+<a href="education.html">Education</a>
+<a href="family.html">Family</a>
+<a href="education.html">Education</a>
+<a href="interest.html">Interest</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+<section class="about-me">
+
+   <!-- Music Button -->
+<button id="musicBtn">🎵</button>
+
+<audio id="bgMusic" loop>
+    <source src="music/blue.mp3" type="audio/mpeg">
+</audio>
+
+<div class="scrapbook">
+
+    <!-- Decorations -->
+    <img src="images/pic32.jpg" class="leaf1">
+    <img src="images/pic32.jpg" class="leaf2">
+    <img src="images/pic32.jpg" class="butterfly">
+    <img src="images/pic32.jpg" class="flower">
+
+    <!-- Photo 1 -->
+    <div class="polaroid photo1">
+        <img src="images/pic23.jpeg">
+        <p>Baby Me</p>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <h4>Hello, my name is</h4>
+        <h1>𝓝𝓾𝓻𝓾𝓵 𝓐𝓷𝓲𝓼𝔂𝓪 𝓑𝓲𝓷𝓽𝓲 𝓕𝓪𝓾𝔃𝓪𝓷</h1>
+
+        <p>🎂12 February 2006</p>
+        <p>📍 Malaysia</p>
+        <p>🎓 University Student</p>
+    </div>
+
+    <!-- About Me -->
+    <div class="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hi! My name is Nurul Anisya. I am 20 years old and currently a university
+            student who enjoys learning new things, travelling,and
+            photography.I was the only girl in my siblings
+            I love taking aesthethic photo and exploring new ideas.
+            My goal is to be a succesful daughter to my parents.   </p>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="polaroid photo2">
+         <img src="images/pic31.jpeg">
+         <p>Reading Mood</p>
+
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="polaroid photo3">
+        <img src="images/pic25.jpeg">
+        <p>Favourite Place</p>
+    </div>
+
+    <!-- Photo 4 -->
+    <div class="polaroid photo4">
+        <img src="images/pic30.jpeg">
+        <p>Photo Selfie</p>
+    </div>
+
+    <!-- Interests -->
+    <div class="interest">
+        <h2>My Interests</h2>
+
+        <ul>
+            <li>Nature Lover</li>
+            <li>Travelling</li>
+            <li>Listening to Music</li>
+            <li>Reading Books</li>
+          
+        </ul>
+    </div>
+
+    <!-- Photo 5 -->
+    <div class="polaroid photo5">
+        <img src="images/pic24.jpeg">
+        <p>Sun Goes Down</p>
+    </div>
+
+</div>
+
+<script>
+
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("musicBtn");
+
+let playing = false;
+
+btn.addEventListener("click", () => {
+
+    if(playing){
+        music.pause();
+        btn.innerHTML = "🎵";
+    }
+    else{
+        music.play();
+        btn.innerHTML = "⏸️";
+    }
+
+    playing = !playing;
+});
+
+</script>
+
+ </div>
+</section>
+
+
+   
+<!--  BACK TO TOP BUTTON -->
+<button id="topBtn" title="Back to top"
+onclick="window.scrollTo({top:0, behavior:'smooth'})">
+🌷͙֒
+</button>
+
+<!-- SHOW/HIDE SCRIPT -->
+<script>
+window.onscroll = function () {
+  let btn = document.getElementById("topBtn");
+  if (document.documentElement.scrollTop > 200) {
+    btn.classList.add("show");
+  } else {
+    btn.classList.remove("show");
+  }
+};
+</script>
+
+<!-- 🌸 FOOTER -->
+<footer>
+    <p>© 2026 Copyright to Nisya 💗</p>
+</footer>
+
+
+</body>
+</html>
